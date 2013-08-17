@@ -1,18 +1,9 @@
 from scrapy.selector import HtmlXPathSelector
 from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 from scrapy.contrib.spiders import CrawlSpider, Rule
-# from scrapy.http import Request
-# from scrapy import log
-# from crunchbase.items import CrunchbaseItem
 from os import path
 from crunchbase.parser.CrunchbaseDataParser import CrunchbaseDataParser
 import os
-# from scrapy.conf import settings
-
-# import urllib
-# import string
-# from bs4 import UnicodeDammit
-# from linkedin.db import MongoDBClient
 
 class CrunchbaseSpiderSpider(CrawlSpider):
     name = 'CrunchbaseSpider'
